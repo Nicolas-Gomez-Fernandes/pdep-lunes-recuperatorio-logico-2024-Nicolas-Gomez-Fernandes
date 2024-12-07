@@ -88,32 +88,3 @@ listaDeCasas(Casas) :-
 casaTasada(Casa, Persona) :-
     vive(Persona, Casa),
     tasacion(Persona, Casa, _).
-
-/*
-
-% 4)
-% 3)
-podriaQuedarSeleccionadoEn(gryffindor, hermione).
-
-podriaQuedarSeleccionadoEn(UnaCasa, UnMago) :-
-    tieneCaracterApropiadoPara(UnaCasa, UnMago),
-    permiteEntrar(UnaCasa, UnMago),
-    not(odiariaQuedar(UnaCasa, UnMago)).
-
-  cadenaDeAmistades(Magos):-
-    todosAmistosos(Magos),
-    cadenaDeCasas(Magos).
-  
-todosAmistosos(Magos):-
-    forall(member(Mago, Magos), amistoso(Mago)).
-  
-amistoso(Mago):-
-    tieneCaracteristica(Mago, amistad).
-
-cadenaDeCasas([Mago1, Mago2 | MagosSiguientes]):-
-    puedeQuedarSeleccionadoPara(Mago1, Casa),
-    puedeQuedarSeleccionadoPara(Mago2, Casa),
-    cadenaDeCasas([Mago2 | MagosSiguientes]).
-cadenaDeCasas([_]).
-  adenaDeCasas([]).
-*/
